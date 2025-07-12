@@ -1,6 +1,7 @@
-"use client";
-
 import { useTranslations } from "next-intl";
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "fa" }];
+}
 
 export default function HomePage() {
   const t = useTranslations("home");

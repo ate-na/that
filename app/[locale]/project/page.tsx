@@ -1,3 +1,7 @@
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "fa" }];
+}
+
 export default function ProjectPage() {
   return (
     <main>
